@@ -8,13 +8,12 @@ public class SkillsMenu : MonoBehaviour
     
     [SerializeField] private Animator skillsMenuAnim;
     [SerializeField] private GameObject skillPanel;
-
-    private bool isSkillPanelOpen = false;
     
-    public List<RectTransform> menuItems;
-    public float animationDuration = 0.3f;
+    [SerializeField] private List<RectTransform> menuItems;
+    [SerializeField] private float animationDuration = 0.3f;
 
     private bool isAnimating = false;
+    private bool isSkillPanelOpen = false;
 
     public void OnMenuItemSelected(RectTransform selectedItem)
     {
